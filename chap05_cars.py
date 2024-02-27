@@ -28,6 +28,6 @@ for requested_toppings in requested_toppings: #for문 = 반복문에 있는 변�
     if requested_toppings in available_toppings: # == 'green peppers':
         print(f"Adding {requested_toppings}")
     else:
-        print(f"Sorry, we don't have {requested_toppings}.")
+        print(f"Sorry, we {requested_toppings}.")
 
 print("\nFinished making your pizza!")
