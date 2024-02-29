@@ -122,6 +122,8 @@ small=list1.index(min(list1))+1
 print( big , small )
 
 
+
+
     
 
 
