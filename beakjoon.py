@@ -116,10 +116,17 @@ m = int(input())
 list1 = input().split()[:m]
 list1 = [int(x) for x in list1]
 
-big = index(max(list1))+1
-small=list1.index(min(list1))+1
+max = list1[0]
+min = list1[0]
 
-print( big , small )
+for num in list1:
+    if num >max:
+        max = num
+    if num <min:
+        min =num
+
+
+print(min,max)
 
 
 

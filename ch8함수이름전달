@@ -19,8 +19,40 @@ def add (x,y):
 def minus (x,y):
     return x-y
 
-def apply_operation(operation,x,y):
+def apply_operation(operation,x,y): #map()함수 역활
     return operation(x,y)
 
 result = apply_operation(add, 3,4)
 result2 = apply_operation(minus, 3,4)
+
+print(f"add 결과 = {result}, minus 결과 = {result2}")
+
+##map() , filter() 함수 사용 
+# def power (item):
+#     return item*item
+
+# def under_three(item):
+#     return item < 3
+
+lst = [1,2,3,4,5]
+
+map_list = map(power,lst)  #map( 함수,데이터 )
+print(f"map()함수 적용결과: {list(map_list)}")
+#22번째줄을 안 만들어도 그 역활을 한다(map함수가)
+
+filter_list = filter(under_three, lst)
+print(f"filter()함수 적용결과: {list(filter_list)}")
+#필터함수
+
+power = lambda x: x*x
+under_three = lambda x: x<3
+
+print(power)
+print(under_three)
+# step1 함수자체를 인수전달
+
+# step2 apply_operation(add 3,4) <-x,y전달
+
+# step3 map 사용
+
+# step4 람다식사용
