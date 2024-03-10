@@ -14,5 +14,4 @@ for num in list1:
 
 
 print(min,max)
-
-
+print(min,max)
